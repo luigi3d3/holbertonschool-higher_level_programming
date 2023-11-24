@@ -4,4 +4,6 @@ def uppercase(s):
         if 'a' <= char <= 'z':
             print("{}".format(chr(ord(char) - ord('a') + ord('A'))), end="")
         else:
-            print()
+            print(char, end="")
+
+uppercase("Best School, 98 Battery street")
