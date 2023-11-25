@@ -8,4 +8,4 @@ end_char = ":" if num_args > 0 else "."
 print(f"{num_args} {arg_plural} {end_char}")
 
 for i, arg in enumerate(argv[1:], start=1):
-    print(f"{i}, {arg}")
+    print(f"{i}: {arg}")
