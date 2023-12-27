@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 def max_integer(my_list=[]):
-    # Check if the list is empty
     if not my_list:
         return None
 
@@ -9,4 +8,6 @@ def max_integer(my_list=[]):
 
     for num in my_list:
         if num > max_value:
-            max_value = numi
+            max_value = num
+
+    return max_value
