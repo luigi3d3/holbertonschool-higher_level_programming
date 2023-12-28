@@ -6,5 +6,5 @@ def uppercase(s):
             output += "{}".format(chr(ord(char) - ord('a') + ord('A')))
         else:
             output += char
-        print(output, end="")
+    print(output)
 uppercase("Holberton School")
