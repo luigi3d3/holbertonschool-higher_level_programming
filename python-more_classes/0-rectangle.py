@@ -2,6 +2,7 @@
 
 """Rectangle class"""
 
+
 class Rectangle:
 
     """define a empty Rectangle class"""
