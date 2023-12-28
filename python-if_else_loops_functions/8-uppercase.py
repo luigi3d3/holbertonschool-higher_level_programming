@@ -7,4 +7,3 @@ def uppercase(s):
         else:
             output += char
     print(output)
-uppercase("Holberton School")
