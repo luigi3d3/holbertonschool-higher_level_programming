@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Rectangle class"""
+"""Rectangle Class"""
 
 
 class Rectangle:
@@ -96,4 +96,24 @@ class Rectangle:
             int: The perimeter of the rectangle.
         """
         return 2 * (self.__width + self.__height) if self.__width > 0 and self.__height > 0 else 0
+
+    def __str__(self):
+        """
+        Returns a string representation of the rectangle.
+
+        Returns:
+            str: A string representation of the rectangle.
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        return (("#" * self.__width + "\n") * self.__height).rstrip()
+
+    def __repr__(self):
+        """
+        Returns a string representation of the rectangle for debugging.
+
+        Returns:
+            str: A string representation of the rectangle.
+        """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
