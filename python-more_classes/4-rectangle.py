@@ -3,8 +3,8 @@
 """Rectangle class"""
 
 
-
 class Rectangle:
+
     """
     Rectangle class with width, height, area, and perimeter methods.
     """
