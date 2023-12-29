@@ -9,7 +9,7 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-    def _init_(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         """
         Initialize a Rectangle instance with optional width and height.
 
@@ -71,33 +71,33 @@ class Rectangle:
 
     def area(self):
         """Calculate and return the area of the rectangle."""
-        return self._width * self._height
+        return self.__width * self.__height
 
     def perimeter(self):
         """Calculate and return the perimeter of the rectangle."""
-        return 2 * (self._width + self._height)
+        return 2 * (self.__width + self.__height)
 
-    def _str_(self):
+    def __str__(self):
         """
         Return a string representation of the rectangle using print_symbol.
 
         Returns:
             str: A string representation of the rectangle.
         """
-        if self._width == 0 or self._height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
-        return ("\n".join([str(self.print_symbol) * self._width] * self._height))
+        return ("\n".join([str(self.print_symbol) * self.__width] * self.__height))
 
-    def _repr_(self):
+    def __repr__(self):
         """
         Return a string representation of the rectangle for eval().
 
         Returns:
             str: A string representation of the rectangle.
         """
-        return "Rectangle({}, {})".format(self._width, self._height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
-    def _del_(self):
+    def __del__(self):
         """Print a message when an instance of Rectangle is deleted."""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
