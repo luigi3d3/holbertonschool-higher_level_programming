@@ -1,10 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const addItemButton = document.getElementById('add_item');
-    const myList = document.querySelector('.myList');
+const ulElement = document.querySelector('ul');
+const addItem = document.getElementById('add_item');
 
-    addItemButton.addEventListener('click', function() {
-        const newItem = document.createElement('li');
-        newItem.textContent = 'Item';
-        myList.appendChild(newItem);
-    });
-});
+addItem.onclick = () => {
+  const newElement = document.createElement('li');
+  newElement.innerHTML = 'Item';
+  ulElement.appendChild(newElement);
+};
