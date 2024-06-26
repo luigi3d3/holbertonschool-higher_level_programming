@@ -1,9 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const toggle_header = document.getElementById('toggle_header');
-    const header = document.querySelector('header');
+const header = document.querySelector('header');
+const toggleHeader = document.getElementById('toggle_header');
 
-    toggle_header.addEventListener('click', function () {
-        header.classList.toggle_header('red');
-        header.classList.toggle_header('green');
-    });
-});
+toggleHeader.onclick = () => {
+  header.classList.toggle('green', !header.classList.contains('green'));
+  header.classList.toggle('red', !header.classList.contains('red'));
+};
